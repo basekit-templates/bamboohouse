@@ -178,13 +178,13 @@ display:table;
 	display: none;
 }
 .widget .extendednavigation ul li:hover ul {
-	background: @color-swatch7;
+	background-color: @color-swatch2;
 }
 .widget .extendednavigation ul li.folder .text {
 	display: inline;
 }
 .widget .extendednavigation ul li.folder .text:hover {
-	color:@font-swatch6-color; 
+	color:lighten(@font-swatch5-color,20%); 
 }
 .widget .extendednavigation {
 	width: 100%;
@@ -368,6 +368,10 @@ button.btn,
 	background-image: image('/images/wood-bg.jpg');
 }
 
+.main .menu-items .inner-item {
+	text-align:center;
+}
+
 /*	===============================
 	Globals
 	=============================== */
@@ -393,11 +397,10 @@ body {
 	background-size:cover;
 }
 .page-wrap {
-	max-width: 1100px;
+	max-width: 1400px;
 	margin: 0 auto;
 	background: @color-swatch1;
-	padding: 0 2% 1% 2%;
-	margin-top: 60px;
+	padding: 0 5% 1% 5%;
 }
 .canvas {
 	background-color:@color-swatch1;
@@ -417,7 +420,7 @@ body {
 }
 
 .main {
-	padding: 2em 2em 1.5em 2em;
+	padding: 1em 2em 1.5em 2em;
 	clear: both;
 	text-align:left;
 	.menu-items {
@@ -607,7 +610,6 @@ header.bk-header {
             .header-left {
                 float:left;
                 width:33%;
-                padding-top:20px;
                 .widget.profile span {
                     float:left;
                 }
@@ -627,7 +629,6 @@ header.bk-header {
             .header-right {
                 float:right;
                 width:33%;
-                padding-top:20px;
                 .widget.profile span {
                 }
                 .widget.profile {
@@ -653,7 +654,7 @@ header.bk-header {
 
  .companyheader {
         float:none;
-        max-width: 1100px;
+        max-width: 1400px;
         margin: 0px auto;
         .logo, .companyname {
             text-align: center;
@@ -743,6 +744,7 @@ span.cross {
 	margin: 0 auto;
 	float:none;
 	background-color: rgba(1, 1, 1, 0.05);
+	min-height:60px;
 	li {
 		margin: 0;
 	}
@@ -773,7 +775,6 @@ span.cross {
 			left: -1em;
 			top: 4em;
 			z-index: 1;
-			border-bottom: 1px solid darken(@color-swatch7, 20%);
 			&.folder .text {
 				color: @font-swatch6-color;
 			}
@@ -1113,7 +1114,7 @@ a.blog-post-more-link, .blog-list-footer a {
 	.nav {
 		text-align: left;
 		line-height: 1.6em;
-		padding: 30px 0;
+		padding: 30px 0 0 0;
 		li {
 			margin: 0;
 			ul {
@@ -1167,9 +1168,7 @@ a.blog-post-more-link, .blog-list-footer a {
 	}
 
 	.widget .extendednavigation ul {
-		margin-top: 30px;
 		padding-top:0px;
-		margin-bottom:30px;
 		background-color:transparent;
 	}
 
@@ -1178,15 +1177,11 @@ a.blog-post-more-link, .blog-list-footer a {
 	}
 
 	.companyname {
-		padding:15px 0px;
+		padding:15px 0px 0px 0px;
 	}
 
 	header.bk-header {
 		padding:25px 0px;
-	}
-
-	header.bk-header .header-right {
-		margin-top:10px;
 	}
 
 	.widget .extendednavigation ul li.folder {
@@ -1205,6 +1200,10 @@ a.blog-post-more-link, .blog-list-footer a {
 		float:none;
 	}
 
+	header.bk-header .header-right {
+		padding-top:0;
+	}
+
 	header.bk-header .header-right .widget.profile span {
 		margin:0px auto;
 		display:table;
@@ -1213,10 +1212,14 @@ a.blog-post-more-link, .blog-list-footer a {
 	.widget.menusections ul li {
 		display: block;
 		padding: 5px 0px;
+		margin:0;
 	}
 	.widget .extendednavigation a.pull {
 		right:auto;
-		margin: 0px -20px;
+		top:0;
+		margin: -9px -20px;
+		width: 30px;
+		height: 30px;
 	}
 	.widget .extendednavigation a.pull:after {
 		box-shadow: 0 6px 0 @color-swatch5, 0 12px 0 @color-swatch5;
@@ -1244,7 +1247,7 @@ a.blog-post-more-link, .blog-list-footer a {
 		}
 	}
 	.nav {
-		background-color:transparent;
+		background-color:rgba(1, 1, 1, 0.05);
 	}
 
 	.main {
