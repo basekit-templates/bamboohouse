@@ -1,4 +1,4 @@
-bamboohouse
-===========
+Bamboo House
+=======
 
 BaseKit Menu Template
