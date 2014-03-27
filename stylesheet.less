@@ -148,7 +148,7 @@ input[type=submit],
 
 .widget.profile span {
 	margin:0px auto;
-display:table;
+	display:table;
 }
 
 /* 
@@ -165,6 +165,9 @@ display:table;
 
 .widget .extendednavigation ul {
 	text-align: center;
+	width: 56%!important;
+	margin: 0px auto;
+	float:none;
 }
 .widget .extendednavigation li > .text,
 .widget .extendednavigation ul li a {
@@ -259,6 +262,7 @@ button.btn,
 	-moz-transition: background-color .2s;
 	-ms-transition: background-color .2s;
 	transition: background-color .2s;
+	margin-bottom: 10px;
 	&:hover {
 		background-color: lighten(@color-swatch3,10%);
 		border: none;
@@ -814,6 +818,11 @@ span.cross {
 
 .widget.extendednavigation ul li:last-child a:after, .widget.extendednavigation ul li.folder ul li span.text:after, .widget.extendednavigation ul li.folder ul li a:after {
 	display: none;
+}
+
+.widget.extendednavigation .bk-overlay {
+	width:0;
+	left:0;
 }
 
 .widget.feature .feature-bgimg {
