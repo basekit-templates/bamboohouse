@@ -37,6 +37,15 @@
 @import "@{templateCommon}/basekit-bootstrap.less";
 
 /*	===============================
+	Default page
+	=============================== */
+
+	.bk-pt-default .bk-header {
+	    background-color:lighten(@color-swatch5,20%);
+	    padding:40px 0;
+	}
+
+/*	===============================
 	Type
 	=============================== */
 
@@ -50,7 +59,7 @@ h5, .main p, .main .p-font, .main a, .widget.profile, label, p, .menu-item-nutri
 }
 
 .main {
-	small, strong, i, u, span, label {
+	small, strong, i, u, label {
 		font-family:@font-swatch5-font-family;
 		color:@font-swatch5-color;
 		line-height:@font-swatch5-line-height;
@@ -164,7 +173,6 @@ input[type=submit],
 }
 
 .widget .extendednavigation ul {
-	text-align: center;
 	width: 56%!important;
 	margin: 0px auto;
 	float:none;
@@ -291,7 +299,7 @@ button.btn,
 .contactform button.btn,
 .widget.clicktocall a,
 .widget.clicktocall a:hover {
-	padding: 9px 14px 9px;	
+	padding: 10px 14px 8px 14px;
 }
 
 .widget.tweet a:hover {
@@ -573,7 +581,7 @@ footer.bk-footer h3 {
 
 .menu-subsection-wrapper.menu-subsection-promoted {
 	background-color: rgba(1, 1, 1, 0.05);
-	padding:10px;
+	padding:20px;
 }
 
 .menu-item-promoted {
@@ -695,12 +703,12 @@ header.bk-header .header-left .widget.profile span {
 }
 
  .widget.profile span {
-    font-family:@font-swatch8-font-family;
-    font-weight: @font-swatch8-font-weight;
-    color:@font-swatch8-color;
-    line-height:@font-swatch8-line-height;
-    letter-spacing: @font-swatch8-letter-spacing;
-    font-size: @font-swatch8-font-size;    
+    font-family:@font-swatch7-font-family;
+    font-weight: @font-swatch7-font-weight;
+    color:@font-swatch7-color;
+    line-height:@font-swatch7-line-height;
+    letter-spacing: @font-swatch7-letter-spacing;
+    font-size: @font-swatch7-font-size;    
 }
 
 /*	===============================
@@ -816,6 +824,10 @@ span.cross {
     }
 }
 
+.widget.extendednavigation ul li a:hover:after {
+        color:@font-swatch6-color;
+}
+
 .widget.extendednavigation ul li:last-child a:after, .widget.extendednavigation ul li.folder ul li span.text:after, .widget.extendednavigation ul li.folder ul li a:after {
 	display: none;
 }
@@ -919,7 +931,7 @@ h1, h2, h3, h4, h5, h6 {
 	}
 	.blog-post-metadata {
 		margin-top: 40px;
-		background: @color-swatch7;
+		background-color:lighten(@color-swatch5,90%);
 		padding: 20px 30px;
 		min-height: 0;
 		> * {
@@ -1177,7 +1189,7 @@ a.blog-post-more-link, .blog-list-footer a {
 	}
 
 	.widget .extendednavigation ul {
-		padding-top:0px;
+		padding-top:10px;
 		background-color:transparent;
 	}
 
@@ -1285,8 +1297,16 @@ a.blog-post-more-link, .blog-list-footer a {
 	.menu-item h3, .main .menu-subsection h2 {
 		font-size: bkscale(@font-swatch4-font-size, 0.8);
 	}
-	p, ul, ol, li, .p-font, .main p, .main span, .dietary-icon, .menu .menu-section-item-dietary-props .dietary-icon {
+	p, ul, ol, li, .p-font, .main p, .dietary-icon, .menu .menu-section-item-dietary-props .dietary-icon {
 		font-size: bkscale(@font-swatch5-font-size, 0.8);
+	}
+	.widget.feature .feature-bgimg h2 {
+		font-size: bkscale(@font-swatch8-font-size, 0.6);
+		line-height: bkscale(@font-swatch8-line-height, 0.7);
+	}
+	.widget.feature .feature-bgimg h3 {
+		font-size: bkscale(@font-swatch9-font-size, 0.7);
+		line-height: bkscale(@font-swatch9-line-height, 0.8);
 	}
 	.widget.menusections ul {
 		padding: 1.5em 0 0 0;
