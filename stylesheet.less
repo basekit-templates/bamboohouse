@@ -824,10 +824,6 @@ span.cross {
     }
 }
 
-.widget.extendednavigation ul li a:hover:after {
-        color:@font-swatch6-color;
-}
-
 .widget.extendednavigation ul li:last-child a:after, .widget.extendednavigation ul li.folder ul li span.text:after, .widget.extendednavigation ul li.folder ul li a:after {
 	display: none;
 }
@@ -992,7 +988,7 @@ a.blog-post-more-link {
 .widget.responsiveslideshow .slideshow-widget-controls .dot {
 	border-radius: 100%;
 	&.selected {
-		background-color: @color-swatch1;
+		background-color: @color-swatch5;
 		border-width: 3px;
 	}
 }
@@ -1063,7 +1059,8 @@ gallery-page .widget.responsiveslideshow .slideshow-widget .btn-play,
 }
 
 .widget.responsiveslideshow .content-wrapper > {
-	background: fadeout(@color-swatch7, 50%);
+	background-color:lighten(@color-swatch5,90%);
+	padding:10px 0px;
 	.title, .description {
 		background: none;
 	}
