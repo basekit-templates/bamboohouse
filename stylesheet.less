@@ -1059,11 +1059,15 @@ gallery-page .widget.responsiveslideshow .slideshow-widget .btn-play,
 }
 
 .widget.responsiveslideshow .content-wrapper > {
-	background-color:lighten(@color-swatch5,90%);
-	padding:10px 0px;
+	background: fadeout(@color-swatch7, 50%);
 	.title, .description {
 		background: none;
 	}
+}
+
+.widget.responsiveslideshow .content-wrapper {
+	background-color:lighten(@color-swatch5,50%);
+	padding:10px 0px;
 }
 
 a.blog-post-more-link, .blog-list-footer a {
