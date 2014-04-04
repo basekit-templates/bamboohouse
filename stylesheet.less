@@ -179,7 +179,7 @@ input[type=submit],
 }
 .widget .extendednavigation li > .text,
 .widget .extendednavigation ul li a {
-	padding: 0;
+	padding: 0px 20px;
 }
 .widget .extendednavigation ul li {
 	float: none;
@@ -814,16 +814,6 @@ span.cross {
 	text-align: center;
 }
 
-.widget.extendednavigation ul li a:after, .widget.extendednavigation ul li.folder span.text:after {
-    content: "\00b0";
-    padding: 0 1.5em;
-    position: relative;
-    top: 4px;
-    @media @tablet {
-        display: none;
-    }
-}
-
 .widget.extendednavigation ul li:last-child a:after, .widget.extendednavigation ul li.folder ul li span.text:after, .widget.extendednavigation ul li.folder ul li a:after {
 	display: none;
 }
@@ -1066,7 +1056,7 @@ gallery-page .widget.responsiveslideshow .slideshow-widget .btn-play,
 }
 
 .widget.responsiveslideshow .content-wrapper {
-	background-color:lighten(@color-swatch5,50%);
+	background-color:lighten(@color-swatch5,90%);
 	padding:10px 0px;
 }
 
@@ -1238,20 +1228,20 @@ a.blog-post-more-link, .blog-list-footer a {
 	}
 	.widget .extendednavigation a.pull {
 		right:auto;
-		top:0;
-		margin: -9px -20px;
+		top:-5px;
 		width: 30px;
 		height: 30px;
+		position:relative;
 	}
 	.widget .extendednavigation a.pull:after {
 		box-shadow: 0 6px 0 @color-swatch5, 0 12px 0 @color-swatch5;
 	}
 	.widget .extendednavigation ul {
 		float:none;
-		width: 77%!important;
+		width: 95%!important;
 	}
 	.widget .extendednavigation ul li:hover ul {
-		background-color:lighten(@color-swatch5,90%);
+		background-color:lighten(@color-swatch5,85%);
 	}
 	.widget .extendednavigation ul li:last-child {
 		border-bottom:0;
@@ -1311,8 +1301,5 @@ a.blog-post-more-link, .blog-list-footer a {
 	}
 	.widget.menusections ul {
 		padding: 1.5em 0 0 0;
-	}
-	.widget .extendednavigation ul {
-		width: 97%!important;
 	}
 }
