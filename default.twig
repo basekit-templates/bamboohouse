@@ -3,40 +3,44 @@
 
 {% block content %}
 
-<div class="bk-pt-default">
-	<div class="texture-header">
-	</div>
 
-	<header class="bk-header">
-		<div class="logo">
-			{{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
-		</div>
-		    <div class="companyheader wrapper clearfix">
-		        <div class="header-left">
-		            {{widget('profile', 'headercolumn1profilePhone', { 'profileType':'phone', 'phone':'profile'})|raw}} 
-		        </div>
-		        <div class="header-center">
-		            {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
-		        </div>
-		        <div class="header-right">
-		        	{{widget('profile', 'headercolumn1profileAddress', { 'profileType':'address', 'address':'profile'})|raw}} 
-		        </div>
-		    </div>       
-	</header>
+<div class="texture-header">
+</div>
 
-	<div class="canvas">
-			<nav class="nav">
-				{{widget('extendednavigation', 'navigationheader', {"align":"center"})|raw}}
-			</nav>
-		<div class="page-wrap">
-			<section class="section main home-page">
-				{{zone('main')|raw}}
-			</section>
-		</div>
+<header class="bk-header">
+	<div class="logo">
+		{{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
 	</div>
+	    <div class="companyheader wrapper clearfix">
+	    <div class="res-col columns span-30-31-30">
+            <div class="column span-three-left">
+	            {{widget('profile', 'headercolumn1profilePhone', { 'profileType':'phone', 'phone':'profile'})|raw}} 
+	        </div>
+	        <div class="column span-three-middle">
+	            {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+	        </div>
+	        <div class="column span-three-right">
+	        	{{widget('profile', 'headercolumn1profileAddress', { 'profileType':'address', 'address':'profile'})|raw}} 
+	        </div>
+	    </div>       
+</header>
 
-	<div class="texture-footer">
+<div class="canvas">
+	<nav class="nav">
+		{{widget('extendednavigation', 'navigationheader', {"align":"center"})|raw}}
+	</nav>
+	<div class="page-wrap">
+		<section class="section main home-page">
+			{{zone('main')|raw}}
+		</section>
 	</div>
+</div>
+</div>
+
+<footer class="bk-footer">
+</div>
+
+<div class="texture-footer">
 </div>
 
 {% endblock %}
