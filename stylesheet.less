@@ -86,26 +86,6 @@ header.bk-header, .nav {
 	text-align: center;
 	clear: both;
 }
-header.bk-header {
-	width: 100%;
-	background-color:rgba(111, 109, 98, 0.4);
-	.aside, .centre {
-		width: 100%;
-		a {
-			border: 0;
-			display: block;
-			margin: 0.3em 0 0.1em;
-			word-wrap: break-word;
-		}
-		.clicktocall a {
-			color: @color-swatch4;
-			font-family:@font-swatch1-font-family;
-			font-size: bkscale(@font-swatch5-font-size, 1.2);
-			margin: 0;
-			padding: 0;
-		}
-	}
-}
 .header-section, .footer-section {
 	background: fade(@color-swatch5, 10%);
 	margin: 0 auto;
@@ -139,9 +119,8 @@ header.bk-header, footer.bk-footer {
 	text-align: right;
 }
 footer.bk-footer {
-	padding: 100px 0px;
+	padding: 0px;
 	width:100%;
-	background-color:rgba(111, 109, 98, 0.6);
 }
 
 footer.bk-footer h3 {
@@ -168,7 +147,9 @@ header.bk-header .content h4 {
 }
 
 header.bk-header {
-	padding:80px 0px;
+	padding:40px 0px;
+	width: 100%;
+	background-color:rgba(111, 109, 98, 0.3);
  .companyheader {
         float:none;
         max-width: 1400px;
@@ -206,13 +187,13 @@ header.bk-header .header-left .widget.profile span {
 	float:none;
 }
 
- .widget.profile span, .widget.profile p, .widget.profile a {
+ .widget.profile, .widget.profile span, .widget.profile p, .widget.profile a {
     font-family:@font-swatch7-font-family;
     font-weight: @font-swatch7-font-weight;
     color:@font-swatch7-color;
     line-height:@font-swatch7-line-height;
     letter-spacing: @font-swatch7-letter-spacing;
-    font-size: @font-swatch7-font-size;    
+    font-size: @font-swatch7-font-size;  
 }
 
 /*	===============================
