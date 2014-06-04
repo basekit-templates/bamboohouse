@@ -70,8 +70,6 @@ body {
 .canvas {
 	background-color:@color-swatch1;
 	width:100%;
-	border-top: 1px solid @color-swatch1;
-	border-bottom: 1px solid @color-swatch1;
 }
 
 .main.menu-page {
@@ -171,51 +169,6 @@ header.bk-header .content h4 {
 
 header.bk-header {
 	padding:80px 0px;
-            .header-left {
-                float:left;
-                width:33%;
-                .widget.profile span {
-                    float:left;
-                }
-                    .widget.content { 
-                    @media @tablet {
-                    margin:0px auto;
-                    display:table;
-                    text-align:center;
-                        }
-                    }
-                @media @tablet {
-                    width:100%;
-                    margin-top:20px;
-                }
-            }
-
-            .header-right {
-                float:right;
-                width:33%;
-                .widget.profile span {
-                }
-                .widget.profile {
-                    @media @tablet {
-                    margin:0px auto;
-                    display:table;
-                    }
-                }
-                @media @tablet {
-                    width:100%;
-                    margin-top:0;
-                    margin-bottom:20px;
-                }
-            }
-
-            .header-center {
-                float:left;
-                width:33%;
-                @media @tablet {
-                    width:100%;
-                }
-            }
-
  .companyheader {
         float:none;
         max-width: 1400px;
@@ -242,7 +195,6 @@ header.bk-header {
                 @media @mobile {
                     font-size: bkscale(@font-swatch10-font-size,0.8);
                     line-height: bkscale(@font-swatch10-line-height,0.8);
-                    padding-bottom: 20px;
                 }
         } 
 
@@ -1292,10 +1244,6 @@ a.blog-post-more-link, .blog-list-footer a {
 
 	.widget .extendednavigation ul li {
 		border-bottom:1px solid rgba(0, 0, 0, 0.05);
-	}
-
-	.companyname {
-		padding:15px 0px 0px 0px;
 	}
 
 	header.bk-header {
