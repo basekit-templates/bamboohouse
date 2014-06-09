@@ -258,7 +258,6 @@ span.cross {
 		position: relative;
 		padding: 1em 0;
 		ul {
-			text-align: left;
 			display: none;
 			position: absolute;
 			background: @color-swatch7;
@@ -457,7 +456,6 @@ input[type=submit],
 */
 
 .nav {
-	float: left;
 	width: 100%;
 	a, a:hover {
 		border-bottom: none;
@@ -480,7 +478,7 @@ input[type=submit],
 	display: inline-block;
 }
 .widget .extendednavigation ul li:hover ul {
-	background-color: rgba(1, 1, 1, 0.05);
+	background-color:lighten(@color-swatch5,90%);
 }
 .widget .extendednavigation ul li.folder .text {
 	display: inline;
@@ -494,6 +492,9 @@ input[type=submit],
 	ul {
 		width: 100%;
 	}
+}
+.nav li ul {
+	text-align:none;
 }
 
 /* 
@@ -1162,9 +1163,7 @@ a.blog-post-more-link, .blog-list-footer a {
 	}
 
 	.nav {
-		text-align: left;
-		line-height: 1.6em;
-		padding: 30px 0 0 0;
+		line-height: 1.6em;å
 		li {
 			margin: 0;
 			ul {
@@ -1214,11 +1213,11 @@ a.blog-post-more-link, .blog-list-footer a {
 	}
 
 	.page-wrap {
-		margin-top:0;
+		padding-top:10px;
 	}
 
 	.widget .extendednavigation ul {
-		padding-top:10px;
+		padding-top:40px;
 		background-color:transparent;
 	}
 
@@ -1262,7 +1261,7 @@ a.blog-post-more-link, .blog-list-footer a {
 	}
 	.widget .extendednavigation a.pull {
 		right:auto;
-		top:-8px;
+		top:22px;
 		width: 30px;
 		height: 30px;
 		margin-left:-15px;
