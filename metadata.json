@@ -3,10 +3,7 @@
 	"thumbnail":"bamboohouse.png",
 	"screenshot":"bamboohouse.png",
 	"templateType":"menu",
-    "pageTypes": [
-        "home",
-        "default"
-    ],
+    
     "tags": {
     "en": ["clean", "coffee", "background", "modern", "shop", "menu", "drink", "professional", "unique", "serif"],
     "es": ["minimalista", "limpio", "fotografico", "vintage", "moderno", "oscuro", "estudio", "website", "creativo", "elegante", "profesional", "unico", "comunicacion", "sans-serif"],
