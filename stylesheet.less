@@ -134,6 +134,10 @@ footer.bk-footer h3 {
     *zoom: 1;
 }
 
+.widget {
+	clear: both;
+}
+
 header.bk-header .content h4 {
 	color:@font-swatch10-color;
 }
@@ -146,6 +150,7 @@ header.bk-header {
         float:none;
         max-width: 1400px;
         margin: 0px auto;
+        display: inline-block;
         .logo, .companyname {
             text-align: center;
             float:none;
@@ -179,13 +184,18 @@ header.bk-header .header-left .widget.profile span {
 	float:none;
 }
 
- .widget.profile, .widget.profile span, .widget.profile p, .widget.profile a {
-    font-family:@font-swatch7-font-family;
-    font-weight: @font-swatch7-font-weight;
-    color:@font-swatch7-color;
-    line-height:@font-swatch7-line-height;
-    letter-spacing: @font-swatch7-letter-spacing;
-    font-size: @font-swatch7-font-size;  
+.bk-header .companyheader .widget.profile {
+	.bk-profile-address {
+		text-align: center;
+	}
+	span, p, a {
+	    font-family:@font-swatch7-font-family;
+	    font-weight: @font-swatch7-font-weight;
+	    color:@font-swatch7-color;
+	    line-height:@font-swatch7-line-height;
+	    letter-spacing: @font-swatch7-letter-spacing;
+	    font-size: @font-swatch7-font-size;  
+	}
 }
 
 /*	===============================
@@ -441,11 +451,6 @@ input[type=submit],
 	}
 }
 
-.widget.profile span {
-	margin:0px auto;
-	display:table;
-}
-
 /* 
 	HEADER NAV
 */
@@ -560,7 +565,8 @@ button.btn,
 .widget.tweet a,
 .widget.dropbox button,
 .widget.socialicons span a {
-	background-color: @color-swatch3;
+	background-color: @font-swatch7-background-color;
+	color: @font-swatch7-color;
 	border: none;
 	-webkit-transition: background-color .2s;
 	-moz-transition: background-color .2s;
@@ -570,6 +576,27 @@ button.btn,
 	&:hover {
 		background-color: lighten(@color-swatch3,10%);
 		border: none;
+	}
+}
+
+.widget.clicktocall a, .widget.clicktocall a:hover {
+	background-color: transparent;
+	color: @font-swatch5-color;
+	@media @mobile {
+		padding: 10px 10px 10px 40px;
+		font-weight: 600;
+		background-color: @font-swatch7-background-color;
+		color: @font-swatch7-color;
+		border: none;
+		-webkit-transition: background-color .2s;
+		-moz-transition: background-color .2s;
+		-ms-transition: background-color .2s;
+		transition: background-color .2s;
+		margin-bottom: 10px;
+		&:hover {
+			background-color: lighten(@color-swatch3,10%);
+			border: none;
+		}
 	}
 }
 
@@ -592,24 +619,13 @@ button.btn,
 .signupform fieldset button,
 .blog-search-submit-button,
 .widget.feature .feature-bgimg .content button.btn,
-.contactform button.btn,
-.widget.clicktocall a,
-.widget.clicktocall a:hover {
+.contactform button.btn {
 	padding: 10px 14px 8px 14px;
 }
 
 .widget.tweet a:hover {
 	color: @color-swatch7;
 	padding-bottom: 14px;
-}
-
-.widget.clicktocall a {
-	border: 2px solid @color-swatch3;
-	display: inline-block;
-	margin-bottom: 1em;
-	&:hover {
-		border-color: darken(@color-swatch3, 10%);
-	}
 }
 
 .widget.profile form button {
@@ -1284,11 +1300,6 @@ a.blog-post-more-link, .blog-list-footer a {
 			font-size: bkscale(@font-swatch5-font-size, 3);
 			letter-spacing: 8px;
 			margin: 0.2em 0 0;
-		}
-		&.clicktocall a {
-			background-color: transparent;
-			background-image: none;
-			border: none;
 		}
 	}
 	header.bk-header {
