@@ -480,6 +480,11 @@ input[type=submit],
 .widget .extendednavigation ul li:hover ul {
 	background-color:lighten(@color-swatch5,90%);
 }
+
+.widget .extendednavigation ul li.folder {
+	margin-right: 0;
+}
+
 .widget .extendednavigation ul li.folder .text {
 	display: inline;
 }
@@ -1551,6 +1556,12 @@ a.blog-post-more-link, .blog-list-footer a {
 			border-bottom: 1px solid fade(@color-swatch5, 30%);
 		}
 	}
+
+	.widget .extendednavigation ul li {
+		padding: 0.6em 0;
+	}
+
+
 	.widget .extendednavigation ul li.folder .text {
 		margin-left: 10px;
 	}
@@ -1622,10 +1633,6 @@ a.blog-post-more-link, .blog-list-footer a {
 		padding:25px 0px;
 	}
 
-	.widget .extendednavigation ul li.folder {
-		margin-right:0;
-	}
-
 	#footercolumn2content h4, #footercolumn1content h4 {
 		margin:0px auto;
 		display:table;
@@ -1662,7 +1669,7 @@ a.blog-post-more-link, .blog-list-footer a {
 	}
 	.widget .extendednavigation ul li:hover ul {
 		background-color:lighten(@color-swatch5,85%);
-		margin: 0 0 0 15px;
+		margin: -12px 0 0 15px;
 	}
 	.widget .extendednavigation ul li:last-child {
 		border-bottom:0;
