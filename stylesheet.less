@@ -506,6 +506,18 @@ input[type=submit],
 	.clearfix
 }
 
+/* Selected state */
+
+.extendednavigation ul li.folder.selected ul li .text {
+    color: @font-swatch6-color;
+}
+
+.extendednavigation ul li.selected, .extendednavigation ul li:hover ul li.selected, .extendednavigation ul li.folder.selected ul li.selected, .extendednavigation ul li.folder.selected {
+    a, .text {
+        color: @font-swatch6-color-hover;
+    }
+}
+
 /* 
 	FORMS
 */
