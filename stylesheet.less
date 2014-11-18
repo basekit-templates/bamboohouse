@@ -54,6 +54,14 @@ body {
 	background-repeat:no-repeat;
 	background-size:cover;
 }
+
+pre {
+	background-color: lighten(@color-swatch1, 5%);
+	border: 0;
+	padding: 5px 10px;
+	white-space: pre-wrap;
+}
+
 .page-wrap {
 	max-width: 1400px;
 	margin: 0 auto;
@@ -145,10 +153,10 @@ header.bk-header .content h4 {
 }
 
 header.bk-header {
-	padding:40px 0px;
+	padding: 40px 0px;
 	width: 100%;
-	background-color:rgba(111, 109, 98, 0.3);
- .companyheader {
+	background-color: rgba(111, 109, 98, 0.5);
+ 	.companyheader {
         float:none;
         max-width: 1400px;
         margin: 0px auto;
@@ -199,6 +207,10 @@ header.bk-header .header-left .widget.profile span {
 	    letter-spacing: @font-swatch7-letter-spacing;
 	    font-size: @font-swatch7-font-size;  
 	}
+}
+
+.bk-header .widget.profile {
+	margin: 3px 0 5px;
 }
 
 /*	===============================
@@ -309,8 +321,11 @@ span.cross {
 }
 
 .widget.extendednavigation .bk-overlay {
-	width:auto;
+	width: auto;
 	min-height:60px;
+	@media @tablet {
+		width: 100%;
+	}
 }
 
 .widget.feature .feature-bgimg {
@@ -538,6 +553,9 @@ textarea,
 	-ms-transition: box-shadow .2s;
 	transition: box-shadow .2s;
 	background-color:darken(@color-swatch1,3%);
+	@media @mobile {
+		width: 100%;
+	}
 	&:focus {
 		border: 1px solid darken(@color-swatch7, 20%);
 		box-shadow: 0 0 5px @color-swatch5;
@@ -555,6 +573,9 @@ input[type=email],
 	height: 42px;	
 	width: 85%;
 	border:0;
+	@media @mobile {
+		width: 100%;
+	}
 }
 
 .contactform input[type=email] {
@@ -571,6 +592,12 @@ input, textarea {
 	background-color:darken(@color-swatch1,3%);
 }
 
+.blog-search-input {
+	@media @mobile {
+		width: 100%;
+	}
+}
+
 /*
 	BUTTONS
 */
@@ -584,7 +611,6 @@ button.btn,
 .widget.paypalbuynow .widget.button.paypal,
 .widget.tweet a,
 .widget.dropbox button,
-.widget.socialicons span a,
 .ecombasket-summary-wrap .btn.ecombasket-summary-link {
 	background-color: @font-swatch7-background-color;
 	color: @font-swatch7-color;
@@ -595,10 +621,28 @@ button.btn,
 	transition: background-color .2s;
 	margin-bottom: 10px;
 	text-decoration: none;
+	@media @mobile {
+		display: block;
+		margin-top: 8px;
+		text-align: center;
+		width: 100%;
+	}
 	&:hover {
 		background-color: lighten(@color-swatch3,10%);
 		border: none;
 	}
+}
+
+.widget.socialicons span a {
+	background-color: @font-swatch7-background-color;
+	color: @font-swatch7-color;
+	border: none;
+	-webkit-transition: background-color .2s;
+	-moz-transition: background-color .2s;
+	-ms-transition: background-color .2s;
+	transition: background-color .2s;
+	margin-bottom: 10px;
+	text-decoration: none;
 }
 
 .ecombasket-summary-wrap .btn.ecombasket-summary-link {
@@ -702,7 +746,7 @@ button.btn,
 	border-radius: 4px;
 	font-size: bkscale(@font-swatch5-font-size, 0.9);
 	margin-top: 1em;
-	padding: 1px 8px;
+	padding: 1px 8px 3px;
 	background-color:@color-swatch6;
 	color: #fff;
 	font-weight:400;
@@ -755,6 +799,7 @@ button.btn,
         -webkit-column-count: 3;
         -webkit-column-gap: 80px;
 		.menu-item {
+			margin: 10px 0;
 			padding: 1px 20px 45px;
 		}
 		li {
@@ -781,6 +826,7 @@ button.btn,
 		.menu-subsection-header {
 			margin-bottom: 1em;
 			h2 {
+				font-size: @font-swatch4-font-size;
 				margin-top: 1em;
 				line-height: @font-swatch4-line-height;
 			}
@@ -802,7 +848,7 @@ button.btn,
 		font-family: @font-swatch5-font-family;
 		font-size: bkscale(@font-swatch5-font-size, 1.1);
 	}
-	.menu-item-image-wrap{
+	.menu-item-image-wrap {
 		width: 100%;
 		height: 200px;
 		margin-bottom: 10px;
@@ -923,6 +969,9 @@ button.btn,
 	}
 }
 .blogpost {
+	.blog-post-title {
+		padding-bottom: 20px;
+	}
 	.blog-post-feature-image-wrap {
 		float: right;
 		img {
@@ -1074,7 +1123,6 @@ select[name="displayCount"] {
 }
 
 .productlist-search input[type=search] {
-	width: auto;
 	border: 1px solid darken(@color-swatch1,7%);
     background-color:  darken(@color-swatch1,5%);
 }
@@ -1211,6 +1259,10 @@ span.ecom-product-category {
     text-decoration: none;
 }
 
+.widget.ecomproduct .ecom-product .btn {
+	padding-bottom: 10px;
+}
+
 .ecom-product-cattag {
     float: left;
     width: 100%;
@@ -1218,8 +1270,6 @@ span.ecom-product-category {
 
 .ecom-product-long-description {
     margin-top: 20px;
-    float: left;
-    width: 100%;
 }
 
 /* ====================
@@ -1516,8 +1566,8 @@ gallery-page .widget.responsiveslideshow .slideshow-widget .btn-play,
 }
 
 .widget.responsiveslideshow .content-wrapper {
-	background-color:@color-swatch5;
-	padding:10px 0px;
+	background-color: lighten(@color-swatch5, 65%);
+	padding: 10px 0px;
 }
 
 a.blog-post-more-link, .blog-list-footer a {
@@ -1579,6 +1629,9 @@ a.blog-post-more-link, .blog-list-footer a {
 
 	.widget .extendednavigation ul li.folder .text {
 		margin-left: 10px;
+		@media @tablet {
+			margin-left: 0;
+		}
 	}
 
 	.nav {
@@ -1684,7 +1737,7 @@ a.blog-post-more-link, .blog-list-footer a {
 	}
 	.widget .extendednavigation ul li:hover ul {
 		background-color:lighten(@color-swatch5,85%);
-		margin: -12px 0 0 15px;
+		margin: 0 12px;
 	}
 	.widget .extendednavigation ul li:last-child {
 		border-bottom:0;
@@ -1727,7 +1780,7 @@ a.blog-post-more-link, .blog-list-footer a {
 		font-size: bkscale(@font-swatch4-font-size, 0.8);
 	}
 	p, ul, ol, li, .p-font, .main p, .dietary-icon, .menu .menu-section-item-dietary-props .dietary-icon {
-		font-size: bkscale(@font-swatch5-font-size, 0.8);
+		font-size: @font-swatch5-font-size;
 	}
 	.widget.feature .feature-bgimg h2 {
 		font-size: bkscale(@font-swatch8-font-size, 0.6);
