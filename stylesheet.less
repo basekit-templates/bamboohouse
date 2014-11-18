@@ -593,6 +593,7 @@ input, textarea {
 }
 
 .blog-search-input {
+	width: auto;
 	@media @mobile {
 		width: 100%;
 	}
@@ -923,7 +924,7 @@ button.btn,
 	Blog styles
 	=============================== */
 .blogpost, .blogpostlist {
-	padding: 0em 0 4.5em;
+	padding: 1em 0 2em;
 	h2 {
 		padding-bottom: .6em;
 		a {
@@ -1016,7 +1017,7 @@ a.blog-post-more-link {
 }
 
 .blog-post-sharing {
-	margin: 3em 0;
+	margin: 1.5em 0;
 }
 
 .main .widget.blogsearch .blog-search-form .form-group label {
@@ -1125,6 +1126,10 @@ select[name="displayCount"] {
 .productlist-search input[type=search] {
 	border: 1px solid darken(@color-swatch1,7%);
     background-color:  darken(@color-swatch1,5%);
+    width: auto;
+    @media @mobile {
+    	width: 100%;
+    }
 }
 
 .productlist-search button {
@@ -1219,7 +1224,7 @@ select[name="displayCount"] {
    =============================== */
 
 .widget.ecomproduct {
-    padding: 3em 0 5em;
+    padding: 3em 0 2em;
 }
 
 .widget.ecomproduct .ecom-product .ecom-product-images-container {

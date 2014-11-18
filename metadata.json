@@ -59,6 +59,11 @@
             "color7":"#ffffff"
         }
     },
+    "images":[
+        "images/headerwood.jpg",
+        "images/background.jpg",
+        "images/wood-bg.png"
+    ],
     "fontSwatch": {
        "title": "Josefin Sans",
         "font1": {
